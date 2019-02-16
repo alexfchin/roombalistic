@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "roomba-listics",
+  "private_key_id": "afdcf43562ebaad8187e013288755401ad7ac47e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC7pO75ei+BceNi\nIjg8iwvFKeJ8wIN7vui5gAPnmsd5RRwsVB9w2h5HKrFlxKBb4u7acGMZx5A050aH\nqKgjtk/lQ6PjA5cfttS9xa0CthaAFzcQ3BjLCRnEpWAfYNJUvbiqwbMkCis7LKn/\nQWAyUa3yFbieaTqo20en2tcX6abDFPtzQGbXZ917092X4gyUGcirB5g4A1/Syo7O\n5l4/2YteQDp/Xfm8yyfJQgD+gJ92pTHBp1iCc+u6nAb8LxVOcvxqrA16TXhbdCCX\n38Xehl/PZPTIid4rs2MQhU4hn9Jfd6JUtU3du/Gnz0SVZ6mzqRbOZ0oFZ2WK+8nS\no1L8ajYXAgMBAAECggEACsbK/LlHiivJbyTfovEqC2LqQYI9lY6eHK0yoYtc7Q+K\n3IGLpAu61RkpbVqmCluVnnukOAz4hg6e7oKWqXplIJnKYJV1CUVoTBUoEwb0ctsi\ndqLqqkUgXY/73cF4mD+kdUDA8jnCnYLlU9C5iW+cdFH1XjpVO/EKrqQIWgoOtuxf\n36/lbTRci6hgMaiuTsOg7qY7m/gFZTgG1yrYboZlZY1AJ2kob6zpU7FcZVK5su4h\neEy34hOXKeO7VF2au83AwMWF62CRyQ3+I4xbZEKM92wFApSbKQ1lKYsq4fL61fSO\n1DkQksxgye5cf2Ajj4txj4GzrFLMJcPlcxjvGLL3OQKBgQDjxAV/2TlLhYphEx/1\n+tV47qVDabiovgmBFM5afW8NAt59oLrBb+r4EFuLPGCWUL5PVKeYesZHehe4iTh2\n5Oqqsly926Ia09Xwj1TfbwzrsOBz2kB2bkO4kak4sn4+nDrU/cXXnh1293R8wG/y\n7ibkLjgZXWF236erW14m5VBWaQKBgQDS56/+vCFekyjQniL00j7m9htfjMin1EfM\n1ojP5RfTZDyKtVp8ystrNM/rBxLT7S1PbP9f+6cStgKEeDpMj783JZS9+26sQsor\nWUzczaKFC7CDs4kwCR9kjoyFifBQfPY3ZwRbSiF7p3IXmSlBpbAxIfxkihBxVajl\nutcnphmYfwKBgQDbghpuubJPR5cysVTXIvRDhXO+wZAXCHducNfjPAoftwkoeBQk\nwzDn/BPN39WSaKTRHdwbxw966X8c+Rpy83H6KsXYsGjNhCUmn2yDnaoNKD1ZShlg\nSip4IeG948BppPXKOf1HLXpmIlygsnHx5XWT6btlLqr0/t2/9uGJiO1hKQKBgFUd\nngCPSmRRvaob9/2YEDzD3B4+wghBesynVEWarnfovyo3sJImgdv9T2AJ1cZjtOKW\nGaZR+IZroC54GwclCEWoTBQ0MeEhf1fpTUTbVJifNBiiz13sgJfjk8Cc/7hsBi4r\nzC1PiJ3P4RK3BFhzFt1tWt/0fFhQ+r3kHsrolPHfAoGBAMDqE436s5XzH2rLGZWZ\nCTbsF9pfqdC1EHSIFjOSicsU60y2UCmMAxfdO9qyAryikjlH2FdDIDn4VtJ7UUm8\nCsPub4ezNSzEosPqrw6FLxcfM3/sZaWBFPVuPz0wrWbskfDqgYEqlifexru76VEx\nBMktVjm4hKOQ9I5s2bPVpsTa\n-----END PRIVATE KEY-----\n",
+  "client_email": "alexchin23@roomba-listics.iam.gserviceaccount.com",
+  "client_id": "103388787316915990935",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/alexchin23%40roomba-listics.iam.gserviceaccount.com"
+}
