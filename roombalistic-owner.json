@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "roombalistic",
+  "private_key_id": "8b3114f785dc0f9f3d7fff75a1628524c3bd7519",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDQ7Waw/CfatmzL\noTQusQy5lsy6MVKS8u16YmzkL85M0aSJpwnf+ByqX6AePFsHiA0vSFfFCqK5nuMH\nKa+Fe4Z0ezFqRD9lyYukMDM/khK5bmk2m9t2evG0xP9Jk+lCOPTNcjtAhQOJH4Qm\nhDKAH5BLmS8i7yVIafe4ejcUTB9HdOaDPTHZYscaOJkWdZ5wuy9kXJKB0IZDsJ33\nq5HWzCns+c44sjc/ZlwEFTwfSzzpslN6mvr8anCgQJ12VaPFQjsdnAkwov5OyuEw\n5D7BvTeUSkLXNNYTmDVi8TVAsAYP4vnE0vU2flVYxFs7su1Crc1CdFiQI6WOj8tY\n6ekKFDfLAgMBAAECggEAHaCngQ5RDIf1clmq5RArG3USFTlXWgq5uIg/+Yqko796\n/iDs7+Y8Z8C7G8Pirh+8rD7YYNM685MKONglfDVh13TSM3Ki1uliNGdiwm9m2QWa\nRVSMJlzAQqqeVS3KKfTvv46lGRIucoHrTexN87NbgAz6DTyCj1FPqsknXxPTFQvH\nkCuQMtUgkrAUBT5K5bt6hZF6wJ/pZuJooBJZcWiNDS7i4/USjxR1gM4HO5+KvXl1\nXYiWsUe0KIew2ZkCSBSrKLrT9rp49ZSBvZB9j+sNg+c/MnYLe6/z9OrWOSZV3r/g\nc+d5g5cOkmKgx2GUtYmk632FKK/LF/RQgUUMtdh6qQKBgQDr+PYe2fx/swKxwo7j\naOuUybTEGk1E4VgKETWsbDVj3w11aAyjp7oop2nkkGJ2wpG4GV7ZsVc+k2yl+UxS\n6YWV4yR0fsCayen5GTFDMpvW2DnjMgiSjHTYX0osPYFb9qDZ3Uq8H0d00Zon4pN7\ncp6DAxNqPHU3oi9mea/z8SL7DwKBgQDiqNKABYYoCv9TTDwnqSBQmMz76oK7Nwf3\nFC/ewcoYzLS/pa+Ptqk4BOTuA1BtbYmpSAqDnc+o7j9PkkmCe+N8wxWseEPj+zYB\nL0fyLFNaIlHm5KZWojG+JyfC5ApSb9mz5RLI0Bgap80JZVfbBk5D3yPyBX+8hJws\nfQLLEM+nhQKBgQCP9KDJb3i/ushhA21CRKa7bVYu8FDFPagE9DzHRHhJxjCiuGhF\nirRhysgqHP9ErixRoICh07OCxFNa6bxrNHU/XIPH4e/EPnvTcFACS6SQq/acqNBb\n/v3lZjSMyrTZEptMbdkC7R4doSUnQe1xORqEmGLGw71KxFGgdYonCqupdwKBgQCC\n8S7yoL5ZQckxcRhLfUxa43uAiYFO8MLcPcBN+zxqyVAea3SaHNdzsngi/K0pGp/t\nuN3CHZhLKqBOst9ez32jpPxPcAcgnQ8c7hitUmgw6STRtARYhkkgZnR1BdLkvxNQ\n9yS7+GQEei5coDx6HxF16mJUvlKGMUIb/XhwodylFQKBgQCfRuCv2NMtUhjZb9Xl\nygpX0rhD1EcvJQ06HU7ZIzEW2/1IA/74ZajyLy9bckm6I1t452nNr8IB6ScV20S8\nXH/I3uIMZGw/hQtr+OMM50aY2lGcUy9YdtfjB2qUCTz43AO9Z/aIJWu/PpijfLV4\nXoUTezoxOpsuSOA3zs3ZHUSzqw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "owner-660@roombalistic.iam.gserviceaccount.com",
+  "client_id": "109522956480856281644",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/owner-660%40roombalistic.iam.gserviceaccount.com"
+}

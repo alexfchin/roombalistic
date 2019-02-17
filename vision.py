@@ -18,7 +18,9 @@
 
 import argparse
 import crop_hints as crop
+import os
 
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/yang28/Documents/Coding/roombalistic/roombalistic-owner.json'
 
 # [START vision_face_detection_tutorial_imports]
 from google.cloud import vision
@@ -72,7 +74,7 @@ def highlight_faces(image, faces):#, output_filename):
 
         crop_box = (left,upper,right,lower)
         im2 = im.crop(crop_box)
-        im2.save('out' + str(count) + '.jpg')
+        im2.save('./temp/out' + str(count) + '.jpg')
         count += 1
     #     draw.line(box + [box[0]], width=5, fill='#00ff00')
     #
@@ -88,6 +90,7 @@ def highlight_faces(image, faces):#, output_filename):
 
 
 # [START vision_face_detection_tutorial_run_application]
+<<<<<<< HEAD
 def main(input_filename, output_filename, max_results):
     while(True):
         with open(input_filename, 'rb') as image:
@@ -99,6 +102,18 @@ def main(input_filename, output_filename, max_results):
             # Reset the file pointer, so we can read the file again
             image.seek(0)
             highlight_faces(image, faces)#, output_filename)
+=======
+def extract_faces(input_filename, max_results):
+    with open(input_filename, 'rb') as image:
+        faces = detect_face(image, max_results)
+        print('Found {} face{}'.format(
+            len(faces), '' if len(faces) == 1 else 's'))
+
+        #print('Writing to file {}'.format(output_filename))
+        # Reset the file pointer, so we can read the file again
+        image.seek(0)
+        highlight_faces(image, faces)#, output_filename)
+>>>>>>> 1c916ccdcdfeece070517adf6af3f64535ab87e6
         #crop.crop_to_hint(image,faces)
 # [END vision_face_detection_tutorial_run_application]
 
@@ -108,12 +123,12 @@ if __name__ == '__main__':
         description='Detects faces in the given image.')
     parser.add_argument(
         'input_image', help='the image you\'d like to detect faces in.')
-    parser.add_argument(
-        '--out', dest='output', default='out.jpg',
-        help='the name of the output file.')
+    #parser.add_argument(
+    #    '--out', dest='output', default='out.jpg',
+    #    help='the name of the output file.')
     parser.add_argument(
         '--max-results', dest='max_results', default=4,
         help='the max results of face detection.')
     args = parser.parse_args()
 
-    main(args.input_image, args.output, args.max_results)
+    extract_faces(args.input_image, args.max_results)
