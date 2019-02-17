@@ -18,16 +18,16 @@ isProcessing = False
 
 class Frame_Event(FileSystemEventHandler):
 	def __init__(self, observer, filename):
-        self.observer = observer
-        self.filename = filename
+		self.observer = observer
+		self.filename = filename
 
 	def on_modified(self, event):
 		frame_upload(event)
 
 class ID_Event(FileSystemEventHandler):
 	def __init__(self, observer, filename):
-        self.observer = observer
-        self.filename = filename
+		self.observer = observer
+		self.filename = filename
 
 	def on_modified(self, event):
 		id_download(event)
