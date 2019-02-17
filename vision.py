@@ -89,15 +89,16 @@ def highlight_faces(image, faces):#, output_filename):
 
 # [START vision_face_detection_tutorial_run_application]
 def main(input_filename, output_filename, max_results):
-    with open(input_filename, 'rb') as image:
-        faces = detect_face(image, max_results)
-        print('Found {} face{}'.format(
-            len(faces), '' if len(faces) == 1 else 's'))
+    while(True):
+        with open(input_filename, 'rb') as image:
+            faces = detect_face(image, max_results)
+            print('Found {} face{}'.format(
+                len(faces), '' if len(faces) == 1 else 's'))
 
-        #print('Writing to file {}'.format(output_filename))
-        # Reset the file pointer, so we can read the file again
-        image.seek(0)
-        highlight_faces(image, faces)#, output_filename)
+            #print('Writing to file {}'.format(output_filename))
+            # Reset the file pointer, so we can read the file again
+            image.seek(0)
+            highlight_faces(image, faces)#, output_filename)
         #crop.crop_to_hint(image,faces)
 # [END vision_face_detection_tutorial_run_application]
 
