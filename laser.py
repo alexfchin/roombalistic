@@ -23,11 +23,12 @@ def destroy():
     GPIO.output(LaserGPIO, GPIO.LOW)
     GPIO.cleanup()
 
-if _name_ == '_main_':
+def ready_laser(identifers):
     setup()
+	loop(identifiers)
 
-try:
-    loop(identities)
+#try:
+#    loop(identities)
 
-except KeyboardInterrupt:
-    destroy()
+#except KeyboardInterrupt:
+#    destroy()

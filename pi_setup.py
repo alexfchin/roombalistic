@@ -1,6 +1,7 @@
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import gcp_storage
+import laser
 import time
 
 # global constants
@@ -34,6 +35,11 @@ def frame_upload(event):
 	id_observer.stop()
 
 def id_download(event):
+	with open(local_id, "r") as id_file:
+		identifiers = id_file.read()
+	print(identifiers)
+	if "Unknown" not in identifiers:
+		laser.ready_laser(identifiers)
 	isProcessing = False
 	print(event)
 
