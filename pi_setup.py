@@ -17,18 +17,26 @@ local_id = '/home/pi/Documents/hack@CEWIT19/roombalistic/id.txt'
 isProcessing = False
 
 class Frame_Event(FileSystemEventHandler):
+	def __init__(self, observer, filename):
+        self.observer = observer
+        self.filename = filename
+
 	def on_modified(self, event):
 		frame_upload(event)
 
 class ID_Event(FileSystemEventHandler):
+	def __init__(self, observer, filename):
+        self.observer = observer
+        self.filename = filename
+
 	def on_modified(self, event):
 		id_download(event)
 
 def frame_upload(event):
 	isProcessing = True
 	print(event)
-	id_event_handler = ID_Event()
 	id_observer = Observer()
+	id_event_handler = ID_Event(id_observer, local_id)
 	id_observer.schedule(id_event_handler, local_id)
 	id_observer.start()
 	gcp_storage.upload_blob(bucket, local_frame, gcp_frame)
@@ -56,8 +64,8 @@ if __name__ == "__main__":
 	while True:
 		# Upload the video frame to the GCP storage bucket
 		# and updates id file
-		frame_event_handler = Frame_Event()
 		observer = Observer()
+		frame_event_handler = Frame_Event(observer, local_frame)
 		observer.schedule(frame_event_handler, local_frame)
 		observer.start()
 
