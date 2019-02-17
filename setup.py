@@ -15,6 +15,6 @@ if __name__ == "__main__":
 	vision.extract_faces(filename, 4)
 
 	# Identify the faces
-	images = [pic for pic in os.listdir("./temp/") if os.path.isfile(os.path.join("./temp/", pic)]
+	images = [pic for pic in os.listdir("./temp/") if os.path.isfile(os.path.join("./temp/", pic))]
 	del images[0] # remove the temp image.jpg
 	print(images)
