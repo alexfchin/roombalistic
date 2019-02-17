@@ -1,11 +1,12 @@
 import face_recognition
+import sys
 import os
 
 import face_recognition_knn
 
-known_images_dir = "./Photos/Known"
+known_images_dir = "./Photos/Known/"
 unknown_image = "./Photos/2120.jpg"
-knn_model = "./trained_knn_model.clf"
+knn_model = "./trained_knn_models/model.clf"
 
 def recognition(cropped_images):
     face_recognition_knn.train(known_images_dir, model_save_path=knn_model, verbose=True)
@@ -17,6 +18,13 @@ def recognition(cropped_images):
 
 # For debugging purposes
 if __name__ == "__main__":
-    predictions = recognition([unknown_image])
-    face_recognition_knn.show_prediction_labels_on_image(unknown_image, predictions)
-    print(predictions)
+    print(sys.argv)
+    if len(sys.argv) < 2:
+        print("usage: python recognition.py <file paths>")
+        exit()
+    else:
+        del sys.argv[0] # Remove "recognition.py" from list of arguments
+        predictions = recognition(sys.argv)
+        for i in range(0,len(sys.argv)):
+            print(predictions[i])
+            face_recognition_knn.show_prediction_labels_on_image(sys.argv[i], predictions[i])

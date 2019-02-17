@@ -163,6 +163,7 @@ def show_prediction_labels_on_image(img_path, predictions):
     pil_image = Image.open(img_path).convert("RGB")
     draw = ImageDraw.Draw(pil_image)
 
+    # Get 0th index of predictions to remove outer [] wrapping
     for name, (top, right, bottom, left) in predictions:
         # Draw a box around the face using the Pillow module
         draw.rectangle(((left, top), (right, bottom)), outline=(0, 0, 255))
@@ -179,7 +180,8 @@ def show_prediction_labels_on_image(img_path, predictions):
     # Remove the drawing library from memory as per the Pillow docs
     del draw
 
-    # Display the resulting image
+    # Save and display the resulting image
+    pil_image.save("./labelled/out.png")
     pil_image.show()
 
 

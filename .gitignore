@@ -1,5 +1,7 @@
 /Roomba-listics-vision-api.json
 Photos/
+trained_knn_model/
+labelled/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
