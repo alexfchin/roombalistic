@@ -6,6 +6,7 @@
 Photos/
 trained_knn_model/
 labelled/
+temp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
