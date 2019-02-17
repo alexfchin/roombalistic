@@ -36,8 +36,9 @@ def frame_upload(event):
 	isProcessing = True
 	print(event)
 	id_observer = Observer()
-	id_event_handler = ID_Event(id_observer, local_id)
-	id_observer.schedule(id_event_handler, local_id)
+	dir_path = '/home/pi/Documents/hack@CEWIT19/roombalistic/'
+	id_event_handler = ID_Event(id_observer, dir_path)
+	id_observer.schedule(id_event_handler, dir_path)
 	id_observer.start()
 	gcp_storage.upload_blob(bucket, local_frame, gcp_frame)
 
@@ -64,9 +65,10 @@ if __name__ == "__main__":
 	while True:
 		# Upload the video frame to the GCP storage bucket
 		# and updates id file
+		dir_path = '/home/pi/Documents/hack@CEWIT19/imgs/'
 		observer = Observer()
-		frame_event_handler = Frame_Event(observer, local_frame)
-		observer.schedule(frame_event_handler, local_frame)
+		frame_event_handler = Frame_Event(observer, dir_path)
+		observer.schedule(frame_event_handler, dir_path)
 		observer.start()
 
 		try:
