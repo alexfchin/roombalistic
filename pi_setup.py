@@ -11,7 +11,7 @@ gcp_frame = 'lastsnap.jpg'
 local_frame = '/home/pi/Documents/hack@CEWIT19/imgs/lastsnap.jpg'
 
 gcp_id = 'id.txt'
-local_id = '/home/pi/Documents/hack@CEWIT19/id.txt'
+local_id = '/home/pi/Documents/hack@CEWIT19/roombalistic/id.txt'
 
 # casual global variable for cyclic event-handling
 isProcessing = False
