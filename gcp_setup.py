@@ -23,9 +23,9 @@ if __name__ == "__main__":
 		# Identify the faces
 		images = []
 		for pic in os.listdir("./temp/"):
-		pic_path = os.path.join("./temp/", pic)
-		if os.path.isfile(pic_path) and pic.endswith(".jpg"):
-			images.append(pic_path)
+			pic_path = os.path.join("./temp/", pic)
+			if os.path.isfile(pic_path) and pic.endswith(".jpg"):
+				images.append(pic_path)
 
 		del images[0] # remove the temp image.jpg
 		print(images)
