@@ -122,6 +122,7 @@ def predict(X_img_path, knn_clf=None, model_path=None, distance_threshold=0.6):
     :return: a list of names and face locations for the recognized faces in the image: [(name, bounding box), ...].
         For faces of unrecognized persons, the name 'unknown' will be returned.
     """
+    print(X_img_path)
     if not os.path.isfile(X_img_path) or os.path.splitext(X_img_path)[1][1:] not in ALLOWED_EXTENSIONS:
         raise Exception("Invalid image path: {}".format(X_img_path))
 
@@ -182,7 +183,7 @@ def show_prediction_labels_on_image(img_path, predictions):
 
     # Save and display the resulting image
     pil_image.save("./labelled/out.png")
-    pil_image.show()
+    # pil_image.show()
 
 
 if __name__ == "__main__":

@@ -16,6 +16,15 @@ def recognition(cropped_images):
 
     return identities
 
+def visualize_recognition(image):
+	face_recognition_knn.train(known_images_dir, model_save_path=knn_model)
+
+	results = face_recognition_knn.predict(image, model_path=knn_model)
+
+	face_recognition_knn.show_prediction_labels_on_image(image, results)
+
+	return results
+
 # For debugging purposes
 if __name__ == "__main__":
     print(sys.argv)
