@@ -9,7 +9,7 @@ if __name__ == "__main__":
 	bucket = "roombalistic-vcm"
 
 	# Get latest from from GCP storage bucket
-	storage_frame = "lastframe.jpg"
+	storage_frame = "lastsnap.jpg"
 	vm_frame = "./temp/image.jpg"
 	gcp_storage.download_blob(bucket, storage_frame, vm_frame)
 
