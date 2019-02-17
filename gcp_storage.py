@@ -2,7 +2,10 @@
 Taken from the GCP documentation
 """
 
+import os
 from google.cloud import storage
+
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/yang28/Documents/Coding/roombalistic/roombalistic-default.json'
 
 def upload_blob(bucket_name, source_file_name, destination_blob_name):
     """Uploads a file to the bucket."""
