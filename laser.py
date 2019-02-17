@@ -13,19 +13,19 @@ def setup():
     GPIO.setup(LaserGPIO, GPIO.OUT)
     GPIO.output(LaserGPIO, GPIO.HIGH)
 
-def loop(identities):
-    for person in identities:
-        if person[0] != 'unknown':
-                GPIO.output(LaserGPIO, GPIO.HIGH) # led on
-                time.sleep(2.5)
+def loop(fire):
+    if fire:
+		GPIO.output(LaserGPIO, GPIO.HIGH) # led on
+		time.sleep(2.5)
     destroy()
+
 def destroy():
     GPIO.output(LaserGPIO, GPIO.LOW)
     GPIO.cleanup()
 
-def ready_laser(identifers):
+def ready_laser(fire):
     setup()
-	loop(identifiers)
+	loop(fire)
 
 #try:
 #    loop(identities)

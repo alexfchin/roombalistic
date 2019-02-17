@@ -39,7 +39,7 @@ def id_download(event):
 		identifiers = id_file.read()
 	print(identifiers)
 	if "Unknown" not in identifiers:
-		laser.ready_laser(identifiers)
+		laser.ready_laser(True)
 	isProcessing = False
 	print(event)
 
