@@ -31,7 +31,7 @@ def frame_upload(event):
 	except KeyboardInterrupt:
 		id_observer.stop()
 
-	id_observer.join()
+	id_observer.stop()
 
 def id_download(event):
 	isProcessing = False
