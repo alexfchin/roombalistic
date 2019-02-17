@@ -1,47 +1,33 @@
-
-
 #!/usr/bin/env python
-#####################################################
-#
-#	DO NOT WATCH THE LASER DERECTELY IN THE EYE!
-#
-#####################################################
+
+# Control Lasermodule from Raspberry Pi
+# https://raspberrytips.nl/laser-module-aansturen-via-gpio/
+
 import RPi.GPIO as GPIO
 import time
 
-LedPin = 11    # pin11
+LaserGPIO = 17 # --> PIN11/GPIO17
 
 def setup():
-	GPIO.setmode(GPIO.BOARD)       # Numbers GPIOs by physical location
-	GPIO.setup(LedPin, GPIO.OUT)   # Set LedPin's mode is output
-	GPIO.output(LedPin, GPIO.HIGH) # Set LedPin high(+3.3V) to off led
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(LaserGPIO, GPIO.OUT)
+    GPIO.output(LaserGPIO, GPIO.HIGH)
 
 def loop(identities):
-	#identities = [('unknown', (107, 239, 159, 187)), ('Rahul Sondhi', (87, 156, 149, 93))]
-
-
-	for person in identities:
-		if person[0] != 'unknown':
-			print('Laser on')
-			#GPIO.output(LedPin, GPIO.LOW)  # led on
-			time.sleep(1.0)
-	destroy()
-	# while True:
-	# 	print '...Laser on'
-	# 	GPIO.output(LedPin, GPIO.LOW)  # led on
-	# 	time.sleep(0.5)
-	# 	print 'Laser off...'
-	# 	GPIO.output(LedPin, GPIO.HIGH) # led off
-	# 	time.sleep(0.5)
-
+    for person in identities:
+        if person[0] != 'unknown':
+                GPIO.output(LaserGPIO, GPIO.HIGH) # led on
+                time.sleep(2.5)
+    destroy()
 def destroy():
-	GPIO.output(LedPin, GPIO.HIGH)     # led off
-	GPIO.cleanup()                     # Release resource
+    GPIO.output(LaserGPIO, GPIO.LOW)
+    GPIO.cleanup()
 
-if __name__ == '__main__':     # Program start from here
-	setup()
-	try:
-		loop()
-	except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the child program destroy() will be  executed.
-		destroy()
+if _name_ == '_main_':
+    setup()
 
+try:
+    loop(identities)
+
+except KeyboardInterrupt:
+    destroy()
