@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Firebase Hosted Website</title>
+    <style>
+      .container{
+        padding-left:70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "container">
+      <img src="images/up.png" id = "up">
+    </div>
+    <div>
+      <img src = "images/left.png" id = "left">
+      <img src = "images/right.png" id = "right">
+    </div>
+    <div class = "container">
+      <img src = "images/down.png" id = "down">
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+	<script>
+  	// Initialize Firebase
+  		var config = {
+    		apiKey: "AIzaSyDlL6ZQWm-ECEPNbo2zeFBDL2Hpd7ur5fw",
+    		authDomain: "cewit-c3c68.firebaseapp.com",
+    		databaseURL: "https://cewit-c3c68.firebaseio.com",
+    		projectId: "cewit-c3c68",
+    		storageBucket: "cewit-c3c68.appspot.com",
+    		messagingSenderId: "310605764776"
+  		};
+  		firebase.initializeApp(config);
+	</script>
+    <script src = "fire_connect.js"></script>
+  </body>
+</html>
